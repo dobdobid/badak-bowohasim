@@ -1,0 +1,30 @@
+<!doctype html>
+<html lang="id">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Badak Bowohasim — Selamatkan Badak dan Hutan</title>
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🦏</text></svg>">
+<style>
+  html, body { margin: 0; padding: 0; background: #123524; height: 100%; }
+  body { display: flex; align-items: center; justify-content: center; font-family: system-ui, sans-serif; }
+  #wrap { width: min(1280px, 100vw); }
+  canvas { display: block; width: 100%; height: auto; background: #7ec8f7; cursor: pointer; }
+  #help { color: #d3f9d8; text-align: center; font-size: 14px; padding: 10px 12px; line-height: 1.5; }
+  #help b { color: #ffd93d; }
+  kbd { background: #2f9e44; color: #fff; border-radius: 4px; padding: 1px 6px; font-family: inherit; }
+</style>
+</head>
+<body>
+  <div id="wrap">
+    <canvas id="game" width="1280" height="720" aria-label="Badak Bowohasim"></canvas>
+    <div id="help">
+      <b>Badak Bowohasim</b> — gerakkan badak dengan <kbd>←</kbd> <kbd>↑</kbd> <kbd>↓</kbd> <kbd>→</kbd> atau <kbd>W</kbd><kbd>A</kbd><kbd>S</kbd><kbd>D</kbd>,
+      atau ikuti mouse. <kbd>Spasi</kbd> menyeruduk untuk mengusir tim pemindah, truk, dan ekskavator.
+      Tahan 5 gelombang, jaga Jantung Hutan!
+      <kbd>Spasi</kbd> mulai/seruduk &nbsp;•&nbsp; <kbd>P</kbd> jeda &nbsp;•&nbsp; <kbd>M</kbd> suara &nbsp;•&nbsp; <kbd>R</kbd> main lagi
+    </div>
+  </div>
+  <script type="module" src="./src/main.js"></script>
+</body>
+</html>
